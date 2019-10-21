@@ -186,7 +186,7 @@
                     <option value="after">HELIX_FEATURE_LOAD_POS_AFTER</option>
                 </field>
 
-                <field name="copyright" class="child copyright copyright_1" type="textarea" rows="6" cols="30" default="© {year} Your Company. All Rights Reserved. Designed By JoomShaper" label="HELIX_COMPYRIGHT_TEXT" description="HELIX_COMPYRIGHT_TEXT_DESC" filter="raw" />
+                <field name="copyright" class="child copyright copyright_1" type="textarea" rows="6" cols="30" default="© {year} Trabalho para a disciplina de Tecnologias WEB. Todos os direitos reservados ao Grupo" label="HELIX_COMPYRIGHT_TEXT" description="HELIX_COMPYRIGHT_TEXT_DESC" filter="raw" />
 
                 <!--Social Icons-->
                 <field type="group" title="HELIX_SOCIAL_ICONS" />

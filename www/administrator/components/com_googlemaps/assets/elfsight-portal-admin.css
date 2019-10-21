@@ -1,0 +1,42 @@
+body {
+    height: calc(100% - 30px) !important;
+}
+
+#content, .container-main {
+    height: 100% !important;
+    padding: 0 !important;
+}
+
+#content *:not(#system-message-container) {
+    height: 100% !important;
+}
+
+#system-message-container {
+    padding: 0 !important;
+}
+
+#system-message-container .alert {
+    margin-bottom: 0 !important;
+}
+
+#content .elfsight-portal {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#content .elfsight-portal iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#status {
+    box-shadow: none !important;
+}
+
+#status, .header, .subhead-collapse {
+    display: none !important;
+}

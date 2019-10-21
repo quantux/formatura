@@ -9,6 +9,8 @@
 defined('_JEXEC') or die;
 $doc = JFactory::getDocument();
 $app = JFactory::getApplication();
+// add javascript aquii samerda
+
 
 //Load Helix
 $helix3_path = JPATH_PLUGINS.'/system/helix3/core/helix3.php';
@@ -127,54 +129,17 @@ JHtml::_('jquery.framework');
 					<?php
 					//Social Icons
 					$facebook 	= $this->params->get('facebook');
-					$twitter  	= $this->params->get('twitter');
-					$googleplus = $this->params->get('googleplus');
-					$pinterest 	= $this->params->get('pinterest');
 					$youtube 	= $this->params->get('youtube');
-					$linkedin 	= $this->params->get('linkedin');
-					$dribbble 	= $this->params->get('dribbble');
-					$behance 	= $this->params->get('behance');
-					$skype 		= $this->params->get('skype');
-					$flickr 	= $this->params->get('flickr');
-					$vk 		= $this->params->get('vk');
 
-					if( $this->params->get('show_social_icons') && ( $facebook || $twitter || $googleplus || $pinterest || $youtube || $linkedin || $dribbble || $behance || $skype || $flickr || $vk ) ) {
+					if( $this->params->get('show_social_icons') && ( $facebook || $youtube) ) {
 						$html  = '<ul class="social-icons">';
 
 						if( $facebook ) {
-							$html .= '<li><a target="_blank" href="'. $facebook .'"><i class="fa fa-facebook"></i></a></li>';
-						}
-						if( $twitter ) {
-							$html .= '<li><a target="_blank" href="'. $twitter .'"><i class="fa fa-twitter"></i></a></li>';
-						}
-						if( $googleplus ) {
-							$html .= '<li><a target="_blank" href="'. $googleplus .'"><i class="fa fa-google-plus"></i></a></li>';
-						}
-						if( $pinterest ) {
-							$html .= '<li><a target="_blank" href="'. $pinterest .'"><i class="fa fa-pinterest"></i></a></li>';
+							$html .= '<li><a target="_blank" href="https://www.facebook.com/gabrielmouramm"><i class="fa fa-facebook"></i></a></li>';
 						}
 						if( $youtube ) {
 							$html .= '<li><a target="_blank" href="'. $youtube .'"><i class="fa fa-youtube"></i></a></li>';
 						}
-						if( $linkedin ) {
-							$html .= '<li><a target="_blank" href="'. $linkedin .'"><i class="fa fa-linkedin"></i></a></li>';
-						}
-						if( $dribbble ) {
-							$html .= '<li><a target="_blank" href="'. $dribbble .'"><i class="fa fa-dribbble"></i></a></li>';
-						}
-						if( $behance ) {
-							$html .= '<li><a target="_blank" href="'. $behance .'"><i class="fa fa-behance"></i></a></li>';
-						}
-						if( $flickr ) {
-							$html .= '<li><a target="_blank" href="'. $flickr .'"><i class="fa fa-flickr"></i></a></li>';
-						}
-						if( $vk ) {
-							$html .= '<li><a target="_blank" href="'. $vk .'"><i class="fa fa-vk"></i></a></li>';
-						}
-						if( $skype ) {
-							$html .= '<li><a href="skype:'. $skype .'?chat"><i class="fa fa-skype"></i></a></li>';
-						}
-
 						$html .= '<ul>';
 
 						echo $html;

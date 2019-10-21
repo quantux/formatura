@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Contact Us Widget Slider</name>
+	<author>Alonzo Weatherby</author>
+	<creationDate>June 2013</creationDate>
+	<copyright>Copyright (C)2013 forkliftcertification.us</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>widgets@forkliftcertification.us</authorEmail>
+	<authorUrl>www.forkliftcertification.us</authorUrl>
+	<version>1.1</version>
+	<description>Thanks for installing Contact Us Widget Slider.</description>
+	<files>
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_contactusslider">mod_contactusslider.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_contactusslider.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_contactusslider.ini</language>
+		<language tag="en-GB">en-GB.mod_contactusslider.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="recipient"
+					type="text"
+					default="yourmail@mail.com"					
+					label="Recipient"
+					description="Recipient" />
+				<field
+					name="fromName"
+					type="text"
+					default="Contact Us Widget Slider"					
+					label="form Name"
+					description="form Name" />
+				<field
+					name="fromEmail"
+					type="text"
+					default="yourmail@mail.com"					
+					label="form Email"
+					description="form Email" />
+				<field 
+					name="margintop"
+					type="text"
+					default="50"
+					label="Margin Top" 
+					description="Margin Top" />
+				<field 
+					name="cwidth"
+					type="text"
+					default="340"
+					label="Slider Width" 
+					description="Slider Width" />
+				<field 
+					name="cheight"
+					type="text"
+					default="265"
+					label="Slider Height" 
+					description="Slider Height" />
+				<field
+					name="position"
+					type="radio"
+					class="btn-group"
+					default="left"
+					label="Position"
+					description="Position">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>	
+                 <field type="spacer" name="myspacer" label="Note: If you are using Joomla 2.5 or your site not loading jQuery yet - You might like to put that option as Yes to load jQuery" />	
+				<field
+					name="loadjquery"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="Load Jquery"
+					description="Load Jquery">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>			
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					default=""
+					label="MOD_CONTACT_US_SLIDER_MODULE_CLASS"
+					description="MOD_CONTACT_US_SLIDER_MODULE_CLASS_DESC" />
+						
+			</fieldset>
+		</fields>
+	</config>
+</extension>
